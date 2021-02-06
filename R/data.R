@@ -144,3 +144,89 @@ NULL
 #' aus_arrivals
 #'
 NULL
+
+#' Call volume for a large North American bank
+#'
+#' Five-minute call volume handled on weekdays between 7:00am and 9:05pm, beginning 3 March 2003 for 164 days.
+#'
+#' @name bank_calls
+#' @docType data
+#' @format Time series of class `tsibble` at 5 minute intervals.
+#' @source Rob Hyndman
+#' @keywords datasets
+#' @examples
+#'
+#' bank_calls
+#'
+NULL
+
+#' Price series for various commodities
+#'
+#' Annual prices for eggs, chicken, copper, nails, oil and wheat.
+#' Eggs, chicken, nails, oil and copper in $US; wheat in British pounds. All prices adjusted for inflation.
+#'
+#' @source Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, John Wiley & Sons: New York. Chapter 9.
+#' @name prices
+#' @docType data
+#' @format Annual time series of class `tsibble`.
+#' @keywords datasets
+#' @examples
+#'
+#' prices %>% autoplot(wheat)
+#'
+NULL
+
+#' Sales for a souvenir shop
+#'
+#' Monthly sales for a souvenir shop on the wharf at a beach resort town in Queensland, Australia.
+#'
+#' @source Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, John Wiley & Sons: New York. Exercise 5.8.
+#' @name souvenirs
+#' @docType data
+#' @format Monthly time series of class `tsibble`.
+#' @keywords datasets
+#' @examples
+#'
+#' souvenirs %>% autoplot(Sales)
+#'
+NULL
+
+
+#' Insurance quotations and advertising expenditure
+#'
+#' Monthly quotations and monthly television advertising expenditure for a US insurance company.
+#' January 2002 to April 2005
+#'
+#' @source Kindly provided by Dave Reilly, Automatic Forecasting Systems.
+#' @name insurance
+#' @docType data
+#' @format Monthly time series of class `tsibble`.
+#' @keywords datasets
+#' @examples
+#'
+#' insurance %>%
+#'   ggplot(aes(x=TVadverts, y=Quotes)) + geom_point()
+#'
+NULL
+
+#' Australian accommodation data
+#'
+#' \code{aus_accommodation} is a quarterly `tsibble` containing data on Australian tourist accommodation
+#' from short-term non-residential accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The data set
+#' also contains the Australian Consumer Price Index (CPI) for the same period.
+#' Takings are in millions of Australian dollars,
+#' Occupancy is a percentage of rooms occupied,
+#' CPI is an index with value 100 in 2012 Q1.
+#'
+#' @source
+#' Australian Bureau of Statistics, Cat No 8635.0, Table 10, and Cat No 6401.0, Table 1.
+#'
+#' @name aus_accommodation
+#' @docType data
+#' @format Time series of class `tsibble`
+#' @keywords datasets
+#' @examples
+#'
+#' aus_accommodation
+#'
+NULL
