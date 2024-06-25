@@ -1,9 +1,25 @@
-# fpp3 (0.5)
+# fpp3 1.0.0
+  * Many more data sets added: 
+      - aus_births
+      - aus_fertility
+      - aus_inbound
+      - aus_mortality
+      - aus_migration
+      - aus_outbound
+      - aus_tobacco
+      - aus_vehicle_sales	
+      - melb_walkers	
+      - nsw_offences	
+      - ny_childcare	
+      - otexts_views
+  * Dropped magrittr dependency
+ 
+# fpp3 0.5
 
   * Improved docs
   * Added fabletools to list of attached packages
 
-# fpp3 (0.4)
+# fpp3 0.4
 
   * Added bank_calls, prices, souvenirs and insurance data sets from fpp2
   * Added Australian accommodation data

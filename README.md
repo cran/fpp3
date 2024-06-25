@@ -19,7 +19,8 @@ Principles and Practice* (3rd edition)](https://OTexts.com/fpp3/) by Rob
 J Hyndman and George Athanasopoulos. It also loads several packages
 needed to do the analysis described in the book. These packages work
 with the [tidyverse](https://www.tidyverse.org/) set of packages,
-sharing common data representations and API design.
+sharing common data representations and API design. Additional data sets
+not used in the book are also included.
 
 ## Installation
 
@@ -45,9 +46,8 @@ remotes::install_github("robjhyndman/fpp3package")
 - [tibble](https://tibble.tidyverse.org), for tibbles, a modern
   re-imagining of data frames.
 - [dplyr](https://dplyr.tidyverse.org), for data manipulation.
-- [tidyr](https://tidyr.tidyverse.org), to easily tidy data using
-  `spread()` and `gather()`.
-- [lubridate](https://lubridate.tidyverse.org), for date/times.
+- [tidyr](https://tidyr.tidyverse.org), to tidy data.
+- [lubridate](https://lubridate.tidyverse.org), for dates/times.
 - [ggplot2](https://ggplot2.tidyverse.org), for data visualisation.
 - [tsibble](https://tsibble.tidyverts.org), for tsibbles, a time series
   version of a tibble.
@@ -63,12 +63,12 @@ have loaded:
 
 ``` r
 library(fpp3)
-#> ── Attaching packages ────────────────────────────────────────────── fpp3 0.5 ──
-#> ✔ tibble      3.1.8     ✔ tsibble     1.1.3
-#> ✔ dplyr       1.1.0     ✔ tsibbledata 0.4.1
-#> ✔ tidyr       1.3.0     ✔ feasts      0.3.0
-#> ✔ lubridate   1.9.1     ✔ fable       0.3.2
-#> ✔ ggplot2     3.4.0     ✔ fabletools  0.3.2
+#> ── Attaching packages ──────────────────────────────────────────── fpp3 1.0.0 ──
+#> ✔ tibble      3.2.1     ✔ tsibble     1.1.4
+#> ✔ dplyr       1.1.4     ✔ tsibbledata 0.4.1
+#> ✔ tidyr       1.3.1     ✔ feasts      0.3.2
+#> ✔ lubridate   1.9.3     ✔ fable       0.3.4
+#> ✔ ggplot2     3.5.1     ✔ fabletools  0.4.2
 #> ── Conflicts ───────────────────────────────────────────────── fpp3_conflicts ──
 #> ✖ lubridate::date()    masks base::date()
 #> ✖ dplyr::filter()      masks stats::filter()
